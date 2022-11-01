@@ -1,11 +1,5 @@
-import pandas as pd 
 import numpy as np
 from numpy import linalg as ln
-from sklearn.model_selection import train_test_split
-
-file = pd.read_excel('wage.xlsx')
-data = pd.DataFrame(file)
-data_train, data_test= train_test_split(data, test_size = 0.1, shuffle=False)
 
 #Remove outliers
 def remove_outlier_std(df_in, col_name):
